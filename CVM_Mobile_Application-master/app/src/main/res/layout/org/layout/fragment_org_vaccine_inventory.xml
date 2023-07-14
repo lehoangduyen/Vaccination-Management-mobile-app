@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/card_white_radius10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_heading"
+                        android:text="Lô vắc-xin: ######" />
+
+                    <TextView
+                        style="@style/text_content"
+                        android:text="Nhập ngày: dd/mm/yyyy" />
+
+                    <TextView
+                        style="@style/text_content"
+                        android:text="Số lượng: ####" />
+
+                    <TextView
+                        style="@style/text_content"
+                        android:text="HSD: dd/mm/yyyy" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

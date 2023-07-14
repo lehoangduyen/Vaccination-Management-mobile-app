@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".ui.citizen.CitizenRegisterAccountActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.citizen.home.CitizenNavigationBottomActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.citizen.registration.CitizenRegistrationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.citizen.info.CitizenProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.citizen.info.CitizenCertificateActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.citizen.vaccination.CitizenVaccinationState1Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.citizen.vaccination.CitizenVaccinationState2Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.citizen.vaccination.CitizenVaccinationState3Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.org.home.OrgNavigationBottomActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.org.vaccine.OrgVaccineManagementActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.org.schedule.schedule_management.OrgCreateScheduleActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.org.schedule.schedule_management.OrgScheduleListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.org.schedule.schedule_management.OrgScheduleManagementActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.org.schedule.registration_management.OrgViewVaccinationProfile"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.org.info.OrgProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.admin.AdminNavigationBottom"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

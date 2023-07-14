@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/card_linearLayout_horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_calendar" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_vaccine_type"
+                style="@style/text_content"
+                android:text="Vắc-xin: Astra Zeneca"/>
+            <TextView
+                android:id="@+id/tv_on_date"
+                style="@style/text_content"
+                android:text="Ngày: dd/mm/yyyy"/>
+            <TextView
+                android:id="@+id/iv_n_registered"
+                style="@style/text_content"
+                android:text="Sáng: #/#; Trưa: #/#; Tối: #/#"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+

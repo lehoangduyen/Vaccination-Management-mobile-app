@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView style="@style/labelFor_et"
+        android:text="Số lô vắc-xin: #######" />
+
+    <TextView style="@style/labelFor_et"
+        android:text="Ngày nhập: dd/mm/yyyy"/>
+
+    <TextView style="@style/labelFor_et"
+        android:text="Số lượng"/>
+    <EditText style="@style/edit_text"
+        android:hint="######"/>
+
+    <TextView style="@style/labelFor_et"
+        android:text="Hạn sử dụng"/>
+    <EditText style="@style/edit_text"
+        android:hint="dd/mm/yyyy"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

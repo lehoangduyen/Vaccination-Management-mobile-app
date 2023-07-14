@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_citizen_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.citizen.home.CitizenHomeFragment"
+    tools:viewBindingIgnore="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/padding_screen_horizontal"
+                    android:layout_marginVertical="20dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="bottom"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/default_avatar_citizen" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="10dp">
+                            <TextView
+                                style="@style/tv_hello" />
+                            <TextView
+                                android:id="@+id/FullName"
+                                style="@style/tv_name" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            style="@style/linear_layout_card"
+                            android:background="@drawable/card_first_primary_feature">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/ic_card1_citizen"/>
+
+                            <TextView style="@style/labelFor_btn_feature"
+                                android:textColor="@color/white"
+                                android:text="Khai báo\ny tế"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btn_certificate"
+                            style="@style/linear_layout_card"
+                            android:background="@drawable/card_second_primary_feature">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/ic_card2_citizen"/>
+
+                            <TextView style="@style/labelFor_btn_feature"
+                                android:textColor="@color/white"
+                                android:text="Chứng nhận\ntiêm chủng"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btn_vaccination"
+                            style="@style/linear_layout_card"
+                            android:background="@drawable/card_third_primary_feature">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/ic_card3_citizen"/>
+
+                            <TextView style="@style/labelFor_btn_feature"
+                                android:textColor="@color/white"
+                                android:text="Đăng ký\ntiêm chủng"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1000dp"
+                    android:background="@drawable/card_home"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/padding_screen_horizontal"
+                    android:paddingVertical="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            style="@style/linear_layout_for_btn_home">
+
+                            <Button
+                                android:id="@+id/btn_profile"
+                                style="@style/btn_feature"
+                                android:background="@drawable/bg_btn_citizen_infomation">
+                            </Button>
+
+                            <TextView style="@style/labelFor_btn_feature"
+                                android:text="Thông tin\ncông dân"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/linear_layout_for_btn_home">
+
+                            <Button
+                                android:id="@+id/btn_account"
+                                style="@style/btn_feature"
+                                android:background="@drawable/bg_btn_citizen_manage_account">
+                            </Button>
+
+
+                            <TextView style="@style/labelFor_btn_feature"
+                                android:text="Thông tin\ntài khoản"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/linear_layout_for_btn_home">
+
+                            <Button
+                                android:id="@+id/btn_relative"
+                                style="@style/btn_feature"
+                                android:background="@drawable/bg_btn_citizen_relatives">
+                            </Button>
+
+                            <TextView style="@style/labelFor_btn_feature"
+                                android:text="Danh sách người thân"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            style="@style/linear_layout_for_btn_home">
+
+                            <Button
+                                android:id="@+id/btn_registration_history"
+                                style="@style/btn_feature"
+                                android:background="@drawable/bg_btn_citizen_registration_history">
+                            </Button>
+
+                            <TextView style="@style/labelFor_btn_feature"
+                                android:text="Lịch sử\ntiêm chủng"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/linear_layout_for_btn_home">
+
+                            <Button
+                                style="@style/btn_feature"
+                                android:background="@drawable/bg_btn_citizen_statistic">
+                            </Button>
+
+                            <TextView style="@style/labelFor_btn_feature"
+                                android:text="Thống kê\ntiêm chủng"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/linear_layout_for_btn_home">
+
+                            <Button
+                                style="@style/btn_feature"
+                                android:background="@drawable/bg_btn_feature_more"></Button>
+
+                            <TextView style="@style/labelFor_btn_feature"
+                                android:text="Xem thêm"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView style="@style/text_heading"
+                        android:text="Cẩm nang y tế"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginVertical="10dp"
+                        android:layout_height="200dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/card_white_radius10"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

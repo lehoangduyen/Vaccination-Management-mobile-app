@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/card_linearLayout_horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/card_date">
+            <TextView
+                android:id="@+id/tv_dd_registration"
+                style="@style/text_date_view_dd"/>
+
+            <TextView
+                android:id="@+id/tv_mmyyyy_registration"
+                style="@style/text_date_view_mmyyyy"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_org_avatar" />
+
+            <TextView
+                android:id="@+id/tv_org_name"
+                style="@style/text_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_vaccines" />
+
+            <TextView
+                android:id="@+id/tv_vaccine_type"
+                style="@style/labelFor_et"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_number"/>
+            <TextView
+                android:id="@+id/tv_number_order"
+                style="@style/labelFor_et"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_status"
+            style="@style/text_status_registration_3" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/sp_registration_options"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_more_vert" />
+</androidx.appcompat.widget.LinearLayoutCompat>
